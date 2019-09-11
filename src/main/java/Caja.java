@@ -8,6 +8,8 @@ public class Caja
     int moneda;
 
     public Caja(int ident, String f, int d[], int c[], int m){
+        denom = new int[d.length];
+        cant = new int[d.length];
         id=ident;
         fecha=f;
         moneda=m;

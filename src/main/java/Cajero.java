@@ -38,6 +38,23 @@ public class Cajero
     }
 
     public int[] deCierreCaja(int i){
+
         return caja.get(i-1).getBalance();
+    }
+
+    public int retire(int monto, int pin, int clienteId) {
+        boolean existeCliente = false;
+        int i=0;
+        while (!existeCliente && i<cliente.size()){
+            if(cliente.get(i).id == clienteId){
+                existeCliente = true;
+            } else{
+                i++;
+            }
+        }
+        if(existeCliente && pin == cliente.get(i).pin){
+            cliente.get(i).saldo -= monto;
+        }
+        return monto;
     }
 }

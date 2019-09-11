@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb81180-c164-4f8a-a9e4-0b9c8b9acf3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CajaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jimmyid.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab3_Inge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jimmyId.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ATM_Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ATM_Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Caja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Caja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cajero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cajero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CajeroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CajeroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClienteTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +48,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -74,14 +76,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CajeroTest.retire">
     <configuration name="Lab3" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ATM_Controlador" />
-      <module name="jimmy" />
+      <module name="jimmyid" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CajeroTest.instancieCajas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jimmyid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CajeroTest" />
+      <option name="METHOD_NAME" value="instancieCajas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CajeroTest.retire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jimmyid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CajeroTest" />
+      <option name="METHOD_NAME" value="retire" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jimmyid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Lab3" />
+      <item itemvalue="JUnit.ClienteTest" />
+      <item itemvalue="JUnit.CajeroTest.instancieCajas" />
+      <item itemvalue="JUnit.CajeroTest.retire" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CajeroTest.retire" />
+        <item itemvalue="JUnit.CajeroTest.instancieCajas" />
+        <item itemvalue="JUnit.ClienteTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,6 +146,7 @@
       <workItem from="1568219249531" duration="202000" />
       <workItem from="1568219467971" duration="758000" />
       <workItem from="1568220247934" duration="214000" />
+      <workItem from="1568220875063" duration="5766000" />
     </task>
     <servers />
   </component>

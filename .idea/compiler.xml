@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jimmyid" />
         <module name="jimmy" />
         <module name="jimmyId" />
       </profile>
@@ -13,6 +14,7 @@
     <bytecodeTargetLevel>
       <module name="jimmy" target="1.5" />
       <module name="jimmyId" target="1.5" />
+      <module name="jimmyid" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
