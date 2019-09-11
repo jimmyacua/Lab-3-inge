@@ -52,4 +52,16 @@ public class CajeroTest {
         cajero.retire(montoARetirar, 123, 1, 1); //al cliente en la pos 0
         assertEquals(480000, cajero.cliente.get(0).deSaldo(), 0);
     }
+    @Test
+    public void menorCantBilletes(){
+        //cantidad actual 200 billetes por denominacion
+        //cantidad despues de la prueba 199 billetes por denominacion
+        int montoARetirar = 38000;
+        Cajero cajero = new Cajero("11 set 2019");
+        cajero.instancieCajas();
+        cajero.instancieClientes();
+        cajero.retire(montoARetirar,123, 1); //al cliente en la pos 0
+        int[] expected = {199, 199, 199, 199, 199};
+        assertArrayEquals(expected, cajero.caja.get(0).getCant());
+    }
 }
