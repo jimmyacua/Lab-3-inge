@@ -42,8 +42,13 @@ public class Cajero
         return caja.get(i-1).getBalance();
     }
 
-    public int retire(int monto, int pin, int clienteId) {
+    public int retire(int monto, int pin, int clienteId, int tipoMoneda) {
+        /*
+         * Para motivos de pruebas solo se debe retirar montos que sean un billete.
+         * Tipo de moneda puede ser 1, 2, o 3.
+         */
         boolean existeCliente = false;
+        boolean hayDinero = false;
         int i=0;
         while (!existeCliente && i<cliente.size()){
             if(cliente.get(i).id == clienteId){
@@ -52,8 +57,26 @@ public class Cajero
                 i++;
             }
         }
-        if(existeCliente && pin == cliente.get(i).pin){
+        int c = 0;
+        while (c < caja.size() && !hayDinero){
+            if(caja.get(c).moneda == tipoMoneda){
+                hayDinero = true;
+            } else {
+                c++;
+            }
+        }
+        if(existeCliente && pin == cliente.get(i).pin && hayDinero){
+            int m = 0;
+            boolean encontrado = false;
+            while (m < caja.get(c).denom.length && !encontrado){
+                if(caja.get(c).denom[m] != monto){
+                    m++;
+                } else {
+                    encontrado = true;
+                }
+            }
             cliente.get(i).saldo -= monto;
+            caja.get(c).cant[m] -=1;
         }
         return monto;
     }
